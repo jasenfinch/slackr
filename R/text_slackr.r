@@ -56,7 +56,7 @@ text_slackr <- function(text,
                          icon_emoji=icon_emoji,
                          text=text,
                          link_names=1,
-                         ...))
+                         ...),config = config(http_version = 0))
 
   warn_for_status(resp)
 
